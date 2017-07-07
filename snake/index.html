@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Guessing Game</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id="container">
+    
+<h1>Guessing Game</h1>
+
+    <div id="message_txt"></div>
+    <form id="userInput" name="userInput" method="post">
+        <input id="input_txt" name="limitedtextfield" type="text" onKeyDown="limitText(this.form.limitedtextfield,3);" onKeyUp="limitText(this.form.limitedtextfield,3);" maxlength="3">
+        <br />
+        <button id="guess_btn" type="button" onclick="guessNumber()">?</button>
+        <br />
+        <button id="playAgain_btn" type="button" onclick="initGame()">&#x21BB;</button>
+    </form>
+</div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
